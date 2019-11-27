@@ -33,6 +33,10 @@ html {
   font-family: 'NunitoSans', sans-serif;
 }
 
+.bg__inverse {
+  background-color: #fbfbfb;
+}
+
 .btn {
   @apply py-3 px-6;
 }
