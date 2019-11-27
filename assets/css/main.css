@@ -7,3 +7,18 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+.btn {
+  @apply py-3 px-6;
+}
+
+.btn__primary {
+  @apply bg-primary text-white;
+}
+
+.input {
+  @apply py-3 px-4 border border-l-4 border-primary text-sm;
+  border-top-color: #dedede;
+  border-bottom-color: #dedede;
+  border-right-color: #dedede;
+}

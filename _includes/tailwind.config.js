@@ -10,7 +10,7 @@ module.exports = {
         darker: '#222'
       },
       white: {
-        default: '#FFFFF',
+        default: '#FFFFFF',
         dark: '#FBFBFB'
       }
     },
