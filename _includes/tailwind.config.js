@@ -7,11 +7,13 @@ module.exports = {
         lighter: '#A3ABB3',
         default: '#555',
         dark: '#444',
-        darker: '#222'
+        darker: '#222',
+        darkest: '#DEDEDE'
       },
       white: {
         default: '#FFFFFF',
-        dark: '#FBFBFB'
+        dark: '#FBFBFB',
+        darkest: '#DEDEDE'
       }
     },
     spacing: {
@@ -33,7 +35,8 @@ module.exports = {
       '15': '56px',
       '16': '60px',
       '18': '64px',
-      '20': '80px'
+      '20': '80px',
+      '30': '120px'
     }
   },
   variants: {},

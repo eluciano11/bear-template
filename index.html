@@ -2,11 +2,159 @@
 layout: default
 ---
 
-<section class="bg__inverse">
-  <div class="w-11/12 max-w-6xl m-auto">
-    <h1 class="text-5xl font-light">
+<section
+  class="bg__inverse border border-white-darkest border-t-0 border-l-0 border-r-0"
+>
+  <div class="w-11/12 max-w-6xl m-auto pb-20">
+    <h1 class="text-5xl  mb-1">
       Write beautifully on iPhone, iPad, and Mac
     </h1>
+    <p class="text-xl text-gray-lighter mb-18 ">
+      Bear is a beautiful, flexible writing app for crafting notes and prose.
+    </p>
+    <div class="flex flex-row mb-8">
+      <a class="mr-4" href="">
+        <img
+          class="h-12 w-auto"
+          src="/assets/svg/mac-app-store.svg"
+          alt="Mac App Store"
+        />
+      </a>
+      <a href="">
+        <img
+          class="h-12 w-auto"
+          src="/assets/svg/app-store.svg"
+          alt="App Store"
+        />
+      </a>
+    </div>
     {% include subscription-form.html %}
+    <p class=" text-gray-lighter ">
+      Get updates on Bear progress. No spam, ever.
+    </p>
   </div>
 </section>
+<section
+  class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-16 bg__inverse"
+>
+  <div class="w-11/12 max-w-6xl m-auto text-center">
+    <div class="mb-16">
+      <h2 class="text-3xl mb-4">Bear on the Web</h2>
+      <p>A collection of the parts of the internet dedicated to Bear.</p>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-4/12 text-center">
+        <div class="flex justify-center mb-4">
+          <img
+            class="h-30 w-30"
+            src="/assets/svg/twitter.svg"
+            alt="Twitter Logo"
+          />
+        </div>
+        <h3 class="text-2xl mb-3">Bear on Twitter</h3>
+        <p>Do you think that the gentle tweet of a Bear is odd? We don't!</p>
+      </div>
+      <div class="w-full lg:w-4/12 text-center">
+        <div class="flex justify-center mb-4">
+          <img
+            class="h-30 w-30"
+            src="/assets/svg/reddit.svg"
+            alt="Reddit Logo"
+          />
+        </div>
+        <h3 class="text-2xl mb-3">/r/bearapp on Reddit</h3>
+        <p>Redditor? Join the official subreddit for Bear.</p>
+      </div>
+      <div class="w-full lg:w-4/12 text-center">
+        <div class="flex justify-center mb-4">
+          <img
+            class="h-30 w-30"
+            src="/assets/svg/facebook.svg"
+            alt="Facebook Logo"
+          />
+        </div>
+        <h3 class="text-2xl mb-3">Bear on Facebook</h3>
+        <p>Even bears have their own pages!</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-16"
+>
+  <div class="w-11/12 max-w-6xl m-auto text-center">
+    <h2 class="text-3xl ">Subscribe to Bear Newsletter</h2>
+    <div class="mt-12 mb-8">
+      {% include subscription-form.html %}
+    </div>
+    <p class="  text-gray-lighter">
+      No spam, ever. Your email address will only ever be used for Bear and
+      Shiny Frog News and you can easily unsubscribe with a single click at any
+      time.
+    </p>
+  </div>
+</section>
+<footer class="bg__inverse">
+  <div class="w-11/12 max-w-6xl m-auto">
+    <div class="flex flex-row py-8">
+      <div class="w-1/2">
+        <p class="mb-4">Resources</p>
+        <ul>
+          <li class="flex flex-row items-center mb-1">
+            <img
+              class="h-4 w-auto"
+              src="/assets/svg/attachment.svg"
+              alt="Attachment"
+            />
+            <a class="ml-2 hover:text-primary" href=""
+              >How to import your notes from Evernote</a
+            >
+          </li>
+          <li class="flex flex-row items-center mb-1">
+            <img
+              class="h-4 w-auto"
+              src="/assets/svg/attachment.svg"
+              alt="Attachment"
+            />
+            <a class="ml-2 hover:text-primary" href=""
+              >Safari Chrome and Firefox browser extensions</a
+            >
+          </li>
+          <li class="flex flex-row items-center">
+            <img
+              class="h-4 w-auto"
+              src="/assets/svg/attachment.svg"
+              alt="Attachment"
+            />
+            <a class="ml-2 hover:text-primary" href=""
+              >X-callback-url Scheme documentation</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/2 text-right">
+        <ul class="mb-4">
+          <li class="inline-block mr-6">
+            <a class="text-primary" href="">Twitter</a>
+          </li>
+          <li class="inline-block mr-6">
+            <a class="text-primary" href="">
+              Support
+            </a>
+          </li>
+          <li class="inline-block mr-6">
+            <a class="text-primary" href="">
+              Blog
+            </a>
+          </li>
+          <li class="inline-block">
+            <a class="text-primary" href="">
+              Press Kit
+            </a>
+          </li>
+        </ul>
+        <a class="hover:text-primary" href="">© 2019 Shiny Frog</a>
+      </div>
+    </div>
+  </div>
+</footer>
