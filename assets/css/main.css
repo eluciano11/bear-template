@@ -50,3 +50,31 @@ html {
   @apply py-3 px-4 border border-l-4 border-white-darkest text-sm;
   border-left-color: #ff9e0b;
 }
+
+.previews {
+  height: 600px;
+  max-width: 78em;
+}
+
+.previews__mobile {
+  left: 50%;
+  top: 253px;
+  width: 344px;
+}
+
+.previews__watch {
+  left: 580px;
+  top: 447px;
+  width: 150px;
+}
+
+.previews__desktop {
+  top: 120px;
+  width: 852px;
+}
+
+.preview__ipad {
+  height: 826px;
+  width: 574px;
+  top: 20px;
+}

@@ -38,7 +38,5 @@ module.exports = {
       '20': '80px',
       '30': '120px'
     }
-  },
-  variants: {},
-  plugins: []
+  }
 };
