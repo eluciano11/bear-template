@@ -334,36 +334,4 @@ title: Home
     </p>
   </div>
 </section>
-<footer class="bg__inverse">
-  <div class="w-11/12 max-w-6xl m-auto lg:w-9/12">
-    <div class="flex flex-row flex-wrap py-8">
-      <div class="w-full lg:w-1/2">
-        <p class="mb-4 text-center lg:text-left">Resources</p>
-        <ul>
-          {% for resource in site.resources %}
-          <li class="flex flex-row items-center mb-1">
-            <img
-              class="h-4 w-auto"
-              src="/assets/svg/attachment.svg"
-              alt="Attachment"
-            />
-            <a class="ml-2 hover:text-primary" href="{{resource.link}}"
-              >{{resource.title}}</a
-            >
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="w-full text-center mt-8 lg:w-1/2 lg:text-right lg:mt-0">
-        <ul class="mb-4">
-          {% for data in site.footer_links %}
-          <li class="inline-block mr-6">
-            <a class="text-primary" href="{{data.link}}">{{data.title}}</a>
-          </li>
-          {% endfor %}
-        </ul>
-        <a class="hover:text-primary" href="">© 2019 Shiny Frog</a>
-      </div>
-    </div>
-  </div>
-</footer>
+{% include footer.html %}
