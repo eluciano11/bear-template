@@ -60,7 +60,6 @@ layout: default
       </div>
     </div>
   </div>
-  <!--
   <div class="relative previews overflow-hidden m-auto">
     <img
       class="absolute z-30 previews__watch"
@@ -73,16 +72,16 @@ layout: default
       alt="Mobile Preview"
     />
     <img
-      class="absolute left-0 z-10 previews__desktop"
+      class="absolute left-0 z-10 previews__desktop hidden md:block"
       src="/assets/img/preview.png"
       alt="Desktop Preview"
     />
     <img
-      class="absolute right-0 preview__ipad"
+      class="absolute right-0 previews__ipad hidden md:block"
       src="/assets/img/preview-4.png"
       alt="iPad Preview"
     />
-  </div> -->
+  </div>
 </section>
 <section
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 bg__inverse py-8 lg:py-16"
@@ -90,14 +89,13 @@ layout: default
   <div class="w-11/12 max-w-6xl m-auto">
     <h2 class="text-3xl mb-12 text-left lg:text-center">Welcome to Bear</h2>
     <div class="flex justify-center">
-      <!-- <iframe
-        class="w-10/12"
-        height="540"
+      <iframe
+        class="previews__video w-full md:w-10/12"
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      ></iframe> -->
+      ></iframe>
     </div>
   </div>
 </section>

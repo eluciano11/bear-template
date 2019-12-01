@@ -73,8 +73,32 @@ html {
   width: 852px;
 }
 
-.preview__ipad {
+.previews__ipad {
   height: 826px;
   width: 574px;
   top: 20px;
+}
+
+.previews__video {
+  height: 600px;
+}
+
+@media (max-width: 640px) {
+  .previews {
+    height: 400px;
+  }
+
+  .previews__mobile {
+    left: 14%;
+    top: 5px;
+  }
+
+  .previews__watch {
+    left: 10%;
+    top: 235px;
+  }
+
+  .previews__video {
+    height: 200px;
+  }
 }
