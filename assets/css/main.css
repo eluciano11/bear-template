@@ -35,7 +35,7 @@ html {
 }
 
 .bg__inverse {
-  background-color: #fbfbfb;
+  @apply bg-white-dark;
 }
 
 .btn {
@@ -81,6 +81,32 @@ html {
 
 .previews__video {
   height: 600px;
+}
+
+.faq {
+  @apply text-gray;
+}
+
+.faq h2 {
+  @apply text-3xl font-normal text-gray-dark mb-6;
+}
+
+.faq p,
+.faq ul {
+  @apply mb-4;
+}
+
+.faq__code {
+  @apply py-1 px-2 border border-gray-darkest bg-white-dark;
+  font-family: monospace;
+}
+
+.faq__list {
+  @apply list-disc text-primary text-left;
+}
+
+.faq__list li span {
+  @apply text-gray;
 }
 
 @media (max-width: 640px) {

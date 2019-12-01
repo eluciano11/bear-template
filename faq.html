@@ -1,0 +1,46 @@
+---
+layout: faq
+---
+
+<section class="py-8 lg:py-16">
+  <div class="w-11/12 max-w-6xl m-auto lg:w-10/12">
+    <div class="flex flex-row flex-wrap">
+      <div class="w-full lg:w-1/3">
+        {% for faq in site.faqs %}
+        <ul>
+          <li class="uppercase mb-3">{{faq.section}}</li>
+          {% for entry in faq.entries %}
+          <li class="text-primary mb-2">
+            <a href="{{entry.link}}">{{entry.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+      <div class="w-full lg:w-1/3">
+        {% for faq in site.faqs %}
+        <ul>
+          <li class="uppercase mb-3">{{faq.section}}</li>
+          {% for entry in faq.entries %}
+          <li class="text-primary mb-2">
+            <a href="{{entry.link}}">{{entry.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+      <div class="w-full lg:w-1/3">
+        {% for faq in site.faqs %}
+        <ul>
+          <li class="uppercase mb-3">{{faq.section}}</li>
+          {% for entry in faq.entries %}
+          <li class="text-primary mb-2">
+            <a href="{{entry.link}}">{{entry.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

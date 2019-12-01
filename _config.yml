@@ -71,6 +71,52 @@ footer_links:
   - title: Press Kit
     link: ''
 
+faqs:
+  - section: general
+  - entries:
+      - title: About the Sidebar in Bear
+        link: /faqs/about-the-sidebar.html
+      - title: Advanced search options in Bear
+        link: /faqs/about-the-sidebar.html
+      - title: Backup & Restore
+        link: /faqs/about-the-sidebar.html
+      - title: Bear for Apple Watch overview
+        link: Disable spell check and corrections
+      - title: Drag & Drop on iPad and iPhone
+        link: /faqs/about-the-sidebar.html
+      - title: Hide notes with the Archive
+        link: /faqs/about-the-sidebar.html
+      - title: Hide the Sidebar and Note List on Mac and iPad
+        link: /faqs/about-the-sidebar.html
+      - title: How to blog with Bear on iPad and iPhone
+        link: /faqs/about-the-sidebar.html
+      - title: How to encrypt and lock notes with Bear
+        link: /faqs/about-the-sidebar.html
+      - title: How to fold tasks, show thumbnails in Bear
+        link: /faqs/about-the-sidebar.html
+      - title: How to lock Bear for privacy
+        link: /faqs/about-the-sidebar.html
+      - title: How to use Bear with Siri on iOS
+        link: /faqs/about-the-sidebar.html
+      - title: Open Bear notes in separate windows
+        link: /faqs/about-the-sidebar.html
+      - title: Print notes
+        link: /faqs/about-the-sidebar.html
+      - title: Quickly add emoji to notes
+        link: /faqs/about-the-sidebar.html
+      - title: Quickly navigate notes on iOS
+        link: /faqs/about-the-sidebar.html
+      - title: Typography options
+        link: /faqs/about-the-sidebar.html
+      - title: What about Bear for web, Android, or Windows
+        link: /faqs/about-the-sidebar.html
+      - title: Where are Bear's notes located
+        link: /faqs/about-the-sidebar.html
+      - title: X callback url Scheme documentation
+        link: /faqs/about-the-sidebar.html
+      - title: iMessage stickers
+        link: /faqs/about-the-sidebar.html
+
 # Build settings
 plugins:
   - jekyll-postcss
