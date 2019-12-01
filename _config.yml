@@ -122,25 +122,25 @@ blog_posts:
     created_at: November 27, 2019
     img: '/assets/img/bear.png'
     summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
-    link: ''
+    link: /blog-posts/bear-turns-3.html
 
   - title: Bear turns 3
     created_at: November 27, 2019
     img: '/assets/img/bear.png'
     summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
-    link: ''
+    link: /blog-posts/bear-turns-3.html
 
   - title: Bear turns 3
     created_at: November 27, 2019
     img: '/assets/img/bear.png'
     summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
-    link: ''
+    link: /blog-posts/bear-turns-3.html
 
   - title: Bear turns 3
     created_at: November 27, 2019
     img: '/assets/img/bear.png'
     summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
-    link: ''
+    link: /blog-posts/bear-turns-3.html
 
 # Build settings
 plugins:
