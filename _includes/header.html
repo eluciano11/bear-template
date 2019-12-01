@@ -9,44 +9,43 @@
         />
       </a>
       <ul class="flex flex-row">
-        <li
-          class="text-gray-darker border border-primary border-t-0 border-l-0 border-r-0 border-b-2 uppercase text-gray mx-8 font-semibold whitespace-no-wrap"
-        >
+        {% if page.layout == "default" %}
+        <li class="navbar__item  navbar__item--active mx-8">
           <a href="/">Growth Stock</a>
         </li>
-        <li
-          class="uppercase text-gray-lighter mr-8 hover:text-gray-darker font-semibold whitespace-no-wrap"
-        >
+        {% else %}
+        <li class="navbar__item mx-8">
+          <a href="/">Growth Stock</a>
+        </li>
+        {% endif %}
+        <li class="navbar__item hover:text-gray-darker">
           <a href="/#features">
             Features
           </a>
         </li>
-        <li
-          class="uppercase text-gray-lighter mr-8 hover:text-gray-darker font-semibold whitespace-no-wrap"
-        >
+        <li class="navbar__item hover:text-gray-darker">
           <a href="/#community">Community</a>
         </li>
-        <li
-          class="uppercase text-gray-lighter mr-8 hover:text-gray-darker font-semibold whitespace-no-wrap"
-        >
+        <li class="navbar__item hover:text-gray-darker">
           <a href="/#pricing">
             Pricing
           </a>
         </li>
-        <li
-          class="uppercase text-gray-lighter mr-8 hover:text-gray-darker font-semibold whitespace-no-wrap"
-        >
+        {% if page.layout == "faq" %}
+        <li class="navbar__item navbar__item--active hover:text-gray-darker">
           <a href="/faq.html">
             FAQ
           </a>
         </li>
-        <li
-          class="uppercase text-gray-lighter mr-8 hover:text-gray-darker whitespace-no-wrap"
-        >
-          <a
-            class="uppercase text-gray-lighter mr-8 hover:text-gray-darker font-semibold"
-            href=""
-          >
+        {% else %}
+        <li class="navbar__item hover:text-gray-darker">
+          <a href="/faq.html">
+            FAQ
+          </a>
+        </li>
+        {% endif %}
+        <li class="navbar__item hover:text-gray-darker">
+          <a class="navbar__item hover:text-gray-darker" href="">
             Blog
           </a>
         </li>

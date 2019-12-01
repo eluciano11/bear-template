@@ -39,6 +39,14 @@ html {
   width: 48px;
 }
 
+.navbar__item {
+  @apply uppercase text-gray-lighter mr-8 whitespace-no-wrap font-semibold;
+}
+
+.navbar__item--active {
+  @apply border border-primary border-t-0 border-l-0 border-r-0 border-b-2 text-gray-darker;
+}
+
 .bg__inverse {
   @apply bg-white-dark;
 }
