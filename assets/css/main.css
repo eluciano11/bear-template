@@ -83,6 +83,10 @@ html {
   height: 600px;
 }
 
+.list {
+  @apply list-disc text-primary text-left;
+}
+
 .faq {
   @apply text-gray;
 }
@@ -99,10 +103,6 @@ html {
 .faq__code {
   @apply py-1 px-2 border border-gray-darkest bg-white-dark;
   font-family: monospace;
-}
-
-.faq__list {
-  @apply list-disc text-primary text-left;
 }
 
 .faq__list li span {
