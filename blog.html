@@ -1,0 +1,28 @@
+---
+layout: blog
+title: Blog
+---
+
+{% for post in site.blog_posts %}
+<section class="py-8 lg:py-16">
+  <article class="w-11/12 max-w-6xl m-auto lg:w-10/12">
+    <div class="w-11/12 m-auto mb-12 lg:w-7/12">
+      <h2 class="text-gray-darkest font-semibold text-5xl">
+        <a href="{{post.link}}">
+          {{post.title}}
+        </a>
+      </h2>
+      <p class="text-gray-darkest font-semibold">
+        <a href="{{post.link}}">Published {{ post.created_at }}</a>
+      </p>
+    </div>
+    <a href="{{post.link}}">
+      <img class="m-auto" src="/assets/img/bear.png" alt="Blog post image" />
+    </a>
+    <div class="w-11/12 m-auto mt-12 lg:w-7/12">
+      <p class="text-gray-darkest font-semibold">{{post.summary}}</p>
+    </div>
+  </article>
+</section>
+
+{% endfor %}

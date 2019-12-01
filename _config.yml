@@ -117,6 +117,31 @@ faqs:
       - title: iMessage stickers
         link: /faqs/about-the-sidebar.html
 
+blog_posts:
+  - title: Bear turns 3
+    created_at: November 27, 2019
+    img: '/assets/img/bear.png'
+    summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
+    link: ''
+
+  - title: Bear turns 3
+    created_at: November 27, 2019
+    img: '/assets/img/bear.png'
+    summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
+    link: ''
+
+  - title: Bear turns 3
+    created_at: November 27, 2019
+    img: '/assets/img/bear.png'
+    summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
+    link: ''
+
+  - title: Bear turns 3
+    created_at: November 27, 2019
+    img: '/assets/img/bear.png'
+    summary: Bear had quite the year! We presented at a conference, grew the team, released big new projects, and made great progress on others.
+    link: ''
+
 # Build settings
 plugins:
   - jekyll-postcss

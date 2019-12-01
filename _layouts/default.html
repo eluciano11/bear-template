@@ -1,19 +1,8 @@
 ---
-layout: default
+layout: base
 ---
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <title>{{page.title}}</title>
-  <link rel="preload" href="/assets/css/main.css" as="style" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-</head>
-<html>
-  <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-  </body>
-</html>
+{% include header.html %}
+<main>
+  {{ content }}
+</main>
