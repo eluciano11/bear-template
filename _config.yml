@@ -29,6 +29,48 @@ url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 
+mac_app_store: ''
+apple_app_store: ''
+
+social_media:
+  - title: Bear on Twitter
+    subtitle: Do you think that the gentle tweet of a Bear is odd? We don't!
+    link: ''
+    img: '/assets/svg/twitter.svg'
+
+  - title: /r/bearapp on Reddit
+    subtitle: Redditor? Join the official subreddit for Bear.
+    link: ''
+    img: '/assets/svg/reddit.svg'
+
+  - title: Bear on Facebook
+    subtitle: Even bears have their own pages!
+    link: ''
+    img: '/assets/svg/facebook.svg'
+
+resources:
+  - title: How to import your notes from Evernote
+    link: ''
+
+  - title: Safari Chrome and Firefox browser extensions
+    link: ''
+
+  - title: X-callback-url Scheme documentation
+    link: ''
+
+footer_links:
+  - title: Twitter
+    link: ''
+
+  - title: Support
+    link: ''
+
+  - title: Blog
+    link: ''
+
+  - title: Press Kit
+    link: ''
+
 # Build settings
 plugins:
   - jekyll-postcss

@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section
+  id="main"
   class="bg__inverse border border-white-darkest border-t-0 border-l-0 border-r-0"
 >
   <div class="w-11/12 max-w-6xl m-auto pb-20 pt-3 lg:w-9/12">
@@ -13,14 +14,14 @@ layout: default
       Bear is a beautiful, flexible writing app for crafting notes and prose.
     </p>
     <div class="flex flex-row mb-8">
-      <a class="mr-4" href="">
+      <a class="mr-4" href="{{site.mac_app_store}}">
         <img
           class="h-12 w-auto"
           src="/assets/svg/mac-app-store.svg"
           alt="Mac App Store"
         />
       </a>
-      <a href="">
+      <a href="{{site.apple_app_store}}">
         <img
           class="h-12 w-auto"
           src="/assets/svg/app-store.svg"
@@ -100,6 +101,7 @@ layout: default
   </div>
 </section>
 <section
+  id="features"
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-8 lg:py-16"
 >
   <div class="w-11/12 max-w-6xl m-auto lg:w-10/12">
@@ -260,6 +262,7 @@ layout: default
   </div>
 </section>
 <section
+  id="pricing"
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-8 lg:py-16"
 >
   <div class="w-11/12 max-w-6xl m-auto text-left lg:text-center lg:w-9/12">
@@ -294,6 +297,7 @@ layout: default
   </div>
 </section>
 <section
+  id="community"
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 bg__inverse py-8 lg:py-16"
 >
   <div class="w-11/12 max-w-6xl m-auto text-center lg:w-9/12">
@@ -302,39 +306,15 @@ layout: default
       <p>A collection of the parts of the internet dedicated to Bear.</p>
     </div>
     <div class="flex flex-wrap">
+      {% for social in site.social_media %}
       <div class="w-full text-center mb-12 lg:w-4/12 lg:mb-0 lg:px-4">
         <div class="flex justify-center mb-4">
-          <img
-            class="h-30 w-30"
-            src="/assets/svg/twitter.svg"
-            alt="Twitter Logo"
-          />
+          <img class="h-30 w-30" src="{{social.img}}" alt="Logo" />
         </div>
-        <h3 class="text-2xl mb-3">Bear on Twitter</h3>
-        <p>Do you think that the gentle tweet of a Bear is odd? We don't!</p>
+        <h3 class="text-2xl mb-3">{{social.title}}</h3>
+        <p>{{social.subtitle}}</p>
       </div>
-      <div class="w-full text-center mb-12 lg:w-4/12 lg:mb-0 lg:px-4">
-        <div class="flex justify-center mb-4">
-          <img
-            class="h-30 w-30"
-            src="/assets/svg/reddit.svg"
-            alt="Reddit Logo"
-          />
-        </div>
-        <h3 class="text-2xl mb-3">/r/bearapp on Reddit</h3>
-        <p>Redditor? Join the official subreddit for Bear.</p>
-      </div>
-      <div class="w-full text-center mb-12 lg:w-4/12 lg:mb-0 lg:px-4">
-        <div class="flex justify-center mb-4">
-          <img
-            class="h-30 w-30"
-            src="/assets/svg/facebook.svg"
-            alt="Facebook Logo"
-          />
-        </div>
-        <h3 class="text-2xl mb-3">Bear on Facebook</h3>
-        <p>Even bears have their own pages!</p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -359,58 +339,27 @@ layout: default
       <div class="w-full lg:w-1/2">
         <p class="mb-4 text-center lg:text-left">Resources</p>
         <ul>
+          {% for resource in site.resources %}
           <li class="flex flex-row items-center mb-1">
             <img
               class="h-4 w-auto"
               src="/assets/svg/attachment.svg"
               alt="Attachment"
             />
-            <a class="ml-2 hover:text-primary" href=""
-              >How to import your notes from Evernote</a
+            <a class="ml-2 hover:text-primary" href="{{resource.link}}"
+              >{{resource.title}}</a
             >
           </li>
-          <li class="flex flex-row items-center mb-1">
-            <img
-              class="h-4 w-auto"
-              src="/assets/svg/attachment.svg"
-              alt="Attachment"
-            />
-            <a class="ml-2 hover:text-primary" href=""
-              >Safari Chrome and Firefox browser extensions</a
-            >
-          </li>
-          <li class="flex flex-row items-center">
-            <img
-              class="h-4 w-auto"
-              src="/assets/svg/attachment.svg"
-              alt="Attachment"
-            />
-            <a class="ml-2 hover:text-primary" href=""
-              >X-callback-url Scheme documentation</a
-            >
-          </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="w-full text-center mt-8 lg:w-1/2 lg:text-right lg:mt-0">
         <ul class="mb-4">
+          {% for data in site.footer_links %}
           <li class="inline-block mr-6">
-            <a class="text-primary" href="">Twitter</a>
+            <a class="text-primary" href="{{data.link}}">{{data.title}}</a>
           </li>
-          <li class="inline-block mr-6">
-            <a class="text-primary" href="">
-              Support
-            </a>
-          </li>
-          <li class="inline-block mr-6">
-            <a class="text-primary" href="">
-              Blog
-            </a>
-          </li>
-          <li class="inline-block">
-            <a class="text-primary" href="">
-              Press Kit
-            </a>
-          </li>
+          {% endfor %}
         </ul>
         <a class="hover:text-primary" href="">© 2019 Shiny Frog</a>
       </div>
