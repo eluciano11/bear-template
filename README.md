@@ -1,4 +1,6 @@
-## Growth Stock Landing Page
+## Bear Landing Page Clone
+
+This repo contains a clone of the [Bear](https://bear.app/) website implemented with Tailwind.
 
 ### How to run
 
