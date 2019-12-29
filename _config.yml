@@ -18,58 +18,144 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Kuma Theme
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
 
-mac_app_store: ''
-apple_app_store: ''
+app_name: Bear
+logo: /assets/img/bear.svg
+
+main:
+  header: 'Write beautifully on iPhone, iPad, and Mac'
+  subheader: 'Bear is a beautiful, flexible writing app for crafting notes and prose.'
+  mac_app_store: ''
+  apple_app_store: ''
+  show_subscription: true
+  subscription_message: Get updates on Bear progress. No spam, ever.
+  show_app_store_badge: true
+  show_mac_app_badge: true
+
+overview:
+  summary_1:
+    header: Use it everywhere
+    description: Bear works on iPhone, iPad, and Mac, so you can write wherever inspiration strikes. Use todos to stay on task across every device.
+
+  summary_2:
+    header: Keep control
+    description: Link notes to each other to build a body of work. Use hashtags to organize for the way you think. All notes are stored in portable plain text.
+
+  previews:
+    desktop: /assets/img/preview.png
+    watch: /assets/img/preview-3.png
+    phone: /assets/img/preview-2.png
+    tablet: /assets/img/preview-4.png
+
+preview:
+  header: Welcome to Bear
+  link: https://www.youtube.com/embed/dQw4w9WgXcQ
+
+feature_1:
+  header: Write your way
+  description: Bear is perfect for everything from quick notes to in-depth essays. A focus mode helps you concentrate, and advanced markup options are an online writer's best friend. Full in-line image support brings your writing to life.
+  preview: /assets/img/writing.jpg
+
+feature_2:
+  header: A beautiful setting
+  description: Packed with beautiful themes and typography, and more options on the way, Bear makes your writing look great before and after publishing.
+  preview: /assets/img/settings.jpg
+
+feature_3:
+  header: Editing tools and exports
+  description: Bear's simple tools take the effort out of writing, whether you need to hit specific word counts and reading times, or you need to convert your writing into PDF and Word docs. With Bear's custom markup shortcuts, you can add style and links with just a tap or keystroke.
+  preview: /assets/img/editing.jpg
+
+features_overview:
+  header: Bear features at a glance
+
+  feature_set_1:
+    - Advanced Markup Editor that supports and highlights over 20 programming languages
+    - Rich previews while writing so you see prose, not code
+    - In-line support for images and photos
+    - Use Cross-Note Links to build a body of work, quickly reference other notes, and more
+    - Quickly add todos to individual notes to keep yourself on task
+    - Multiple themes to offer a style for everyone
+    - Multiple export options including HTML, PDF, DOCX, MD, JPG, and more
+
+  feature_set_2:
+    - Smart Data Recognition of elements like links, emails, addresses, colors, and more to come
+    - Hashtags to quickly find and organize notes however you like
+    - One-tap formatting on iPhone and iPad with a custom shortcut bar
+    - Focus Mode hides notes and other options when it matters
+    - All your notes are stored in plain text for the ultimate in portability
+    - Effortless, secure, and private multi-device sync via iCloud
+    - Regular updates to keep you and your writing current
+
+pricing:
+  header: Pricing model
+  description: >
+    Many of Bear’s features are free to use on Mac, iPad, and iPhone. <br />
+    You can create notes, add tags and attachments, and export to a variety of formats. <br /> <br />
+    Bear Pro offer advanced features, including sync between all your devices, over a dozen beautiful themes, and more powerful export options. All this, and future Pro features, can be unlocked with a single in-app subscription that covers all your devices. <br /> <br />
+    The Bear Pro subscription has two options <br /> <br />
+    $1.49 monthly, which offers a one week free trial <br />
+    $14.99 annually, which has a one month free trial <br /> <br />
+    Prices may vary based on your region due to local tax laws and conversion rates from U.S. dollars.
 
 social_media:
-  - title: Bear on Twitter
-    subtitle: Do you think that the gentle tweet of a Bear is odd? We don't!
-    link: ''
-    img: '/assets/svg/twitter.svg'
+  header: Bear on the Web
+  subheader: A collection of the parts of the internet dedicated to Bear.
+  links:
+    - title: Bear on Twitter
+      subtitle: Do you think that the gentle tweet of a Bear is odd? We don't!
+      link: ''
+      img: '/assets/svg/twitter.svg'
 
-  - title: /r/bearapp on Reddit
-    subtitle: Redditor? Join the official subreddit for Bear.
-    link: ''
-    img: '/assets/svg/reddit.svg'
+    - title: /r/bearapp on Reddit
+      subtitle: Redditor? Join the official subreddit for Bear.
+      link: ''
+      img: '/assets/svg/reddit.svg'
 
-  - title: Bear on Facebook
-    subtitle: Even bears have their own pages!
-    link: ''
-    img: '/assets/svg/facebook.svg'
+    - title: Bear on Facebook
+      subtitle: Even bears have their own pages!
+      link: ''
+      img: '/assets/svg/facebook.svg'
 
-resources:
-  - title: How to import your notes from Evernote
-    link: ''
+subscription:
+  header: Subscribe to Bear Newsletter
+  message: No spam, ever. Your email address will only ever be used for Bear and Shiny Frog News and you can easily unsubscribe with a single click at any time.
 
-  - title: Safari Chrome and Firefox browser extensions
-    link: ''
+footer:
+  show_resources: true
+  show_links: true
 
-  - title: X-callback-url Scheme documentation
-    link: ''
+  resources:
+    title: Resources
+    links:
+      - title: How to import your notes from Evernote
+        link: ''
 
-footer_links:
-  - title: Twitter
-    link: ''
+      - title: Safari Chrome and Firefox browser extensions
+        link: ''
 
-  - title: Support
-    link: ''
+      - title: X-callback-url Scheme documentation
+        link: ''
 
-  - title: Blog
-    link: ''
+  links:
+    - title: Twitter
+      link: ''
 
-  - title: Press Kit
-    link: ''
+    - title: Support
+      link: ''
+
+    - title: Blog
+      link: ''
+
+    - title: Press Kit
+      link: ''
 
 faqs:
   - section: general

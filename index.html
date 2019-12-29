@@ -9,31 +9,39 @@ title: Home
 >
   <div class="w-11/12 max-w-6xl m-auto pb-20 pt-3 lg:w-9/12">
     <h1 class="text-4xl mb-1 lg:text-5xl">
-      Write beautifully on iPhone, iPad, and Mac
+      {{site.main.header}}
     </h1>
     <p class="text-xl text-gray-lighter mb-8 lg:mb-18">
-      Bear is a beautiful, flexible writing app for crafting notes and prose.
+      {{site.main.subheader}}
     </p>
-    <div class="flex flex-row mb-8">
-      <a class="mr-4" href="{{site.mac_app_store}}">
-        <img
-          class="h-12 w-auto"
-          src="/assets/svg/mac-app-store.svg"
-          alt="Mac App Store"
-        />
-      </a>
-      <a href="{{site.apple_app_store}}">
-        <img
-          class="h-12 w-auto"
-          src="/assets/svg/app-store.svg"
-          alt="App Store"
-        />
-      </a>
-    </div>
-    {% include subscription-form.html %}
-    <p class=" text-gray-lighter ">
-      Get updates on Bear progress. No spam, ever.
-    </p>
+    {% if site.main.show_app_store_badge or site.main.show_mac_app_badge %}
+      <div class="flex flex-row mb-8">
+        {% if site.main.show_app_store_badge %}
+          <a class="mr-4" href="{{site.main.mac_app_store}}">
+            <img
+              class="h-12 w-auto"
+              src="/assets/svg/mac-app-store.svg"
+              alt="Mac App Store"
+            />
+          </a>
+        {% endif %}
+        {% if site.main.show_mac_app_badge %}
+          <a href="{{site.main.apple_app_store}}">
+            <img
+              class="h-12 w-auto"
+              src="/assets/svg/app-store.svg"
+              alt="App Store"
+            />
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if site.main.show_subscription %}
+      {% include subscription-form.html %}
+      <p class=" text-gray-lighter ">
+        {{site.main.subscription_message}}
+      </p>
+    {% endif %}
   </div>
 </section>
 <section
@@ -42,22 +50,15 @@ title: Home
   <div class="w-11/12 max-w-6xl m-auto mb-8 lg:mb-12 lg:w-9/12 lg:px-16">
     <div class="flex flex-wrap">
       <div class="w-full mb-8 lg:w-1/2 lg:mb-0">
-        <h2 class="text-3xl mb-4">Use it everywhere</h2>
+        <h2 class="text-3xl mb-4">{{site.overview.summary_1.header}}</h2>
         <p>
-          Bear works on iPhone, iPad, and Mac, so you can
-          <span class="font-semibold">write wherever inspiration strikes</span>.
-          Use todos to <span class="font-semibold">stay on task</span> across
-          every device.
+          {{site.overview.summary_1.description}}
         </p>
       </div>
       <div class="w-full lg:w-1/2">
-        <h2 class="text-3xl mb-4">Keep control</h2>
+        <h2 class="text-3xl mb-4">{{site.overview.summary_2.header}}</h2>
         <p>
-          Link notes to each other to
-          <span class="font-semibold">build a body of work</span>. Use hashtags
-          to <span class="font-semibold">organize for the way you think</span>.
-          All notes are
-          <span class="font-semibold">stored in portable plain text</span>.
+          {{site.overview.summary_2.description}}
         </p>
       </div>
     </div>
@@ -65,23 +66,23 @@ title: Home
   <div class="relative previews overflow-hidden m-auto">
     <img
       class="absolute z-30 previews__watch"
-      src="/assets/img/preview-3.png"
-      alt="Apple Watch Preview"
+      src="{{site.overview.previews.watch}}"
+      alt="Watch Preview"
     />
     <img
       class="absolute z-20 previews__mobile"
-      src="/assets/img/preview-2.png"
+      src={{site.overview.previews.phone}}
       alt="Mobile Preview"
     />
     <img
       class="absolute left-0 z-10 previews__desktop hidden md:block"
-      src="/assets/img/preview.png"
+      src={{site.overview.previews.desktop}}
       alt="Desktop Preview"
     />
     <img
       class="absolute right-0 previews__ipad hidden md:block"
-      src="/assets/img/preview-4.png"
-      alt="iPad Preview"
+      src="{{site.overview.previews.tablet}}"
+      alt="Tablet Preview"
     />
   </div>
 </section>
@@ -89,11 +90,11 @@ title: Home
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 bg__inverse py-8 lg:py-16"
 >
   <div class="w-11/12 max-w-6xl m-auto">
-    <h2 class="text-3xl mb-12 text-left lg:text-center">Welcome to Bear</h2>
+    <h2 class="text-3xl mb-12 text-left lg:text-center">{{site.preview.header}}</h2>
     <div class="flex justify-center">
       <iframe
         class="previews__video w-full md:w-10/12"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        src="{{site.preview.link}}"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
@@ -108,15 +109,12 @@ title: Home
   <div class="w-11/12 max-w-6xl m-auto lg:w-10/12">
     <div class="flex flex-wrap items-center">
       <div class="w-full order-last lg:w-3/5 lg:order-none">
-        <img class="h-auto w-11/12" src="/assets/img/writing.jpg" alt="" />
+        <img class="h-auto w-11/12" src="{{site.feature_1.preview}}" alt="" />
       </div>
       <div class="w-full mb-8 lg:w-2/5 lg:mb-0">
-        <h2 class="text-3xl mb-4">Write your way</h2>
+        <h2 class="text-3xl mb-4">{{site.feature_1.header}}</h2>
         <p>
-          Bear is perfect for everything from quick notes to in-depth essays. A
-          focus mode helps you concentrate, and advanced markup options are an
-          online writer's best friend. Full in-line image support brings your
-          writing to life.
+          {{site.feature_1.description}}
         </p>
       </div>
     </div>
@@ -127,13 +125,12 @@ title: Home
 >
   <div class="w-11/12 max-w-6xl m-auto lg:w-9/12">
     <div class="mb-8 text-left lg:text-center">
-      <h2 class="text-3xl mb-4">A beautiful setting</h2>
+      <h2 class="text-3xl mb-4">{{site.feature_2.header}}</h2>
       <p>
-        Packed with beautiful themes and typography, and more options on the
-        way, Bear makes your writing look great before and after publishing.
+        {{site.feature_2.description}}
       </p>
     </div>
-    <img src="/assets/img/settings.jpg" alt="" />
+    <img src="{{site.feature_2.preview}}" alt="" />
   </div>
 </section>
 <section
@@ -142,15 +139,12 @@ title: Home
   <div class="w-11/12 max-w-6xl m-auto">
     <div class="flex flex-wrap items-center text-left">
       <div class="w-full order-last lg:w-3/5 lg:order-none">
-        <img class="h-auto w-11/12" src="/assets/img/editing.jpg" alt="" />
+        <img class="h-auto w-11/12" src="{{site.feature_3.preview}}" alt="" />
       </div>
       <div class="w-full mb-8 lg:w-2/5 lg:mb-0">
-        <h2 class="text-3xl mb-4">Editing tools and exports</h2>
+        <h2 class="text-3xl mb-4">{{site.feature_3.header}}</h2>
         <p>
-          Bear's simple tools take the effort out of writing, whether you need
-          to hit specific word counts and reading times, or you need to convert
-          your writing into PDF and Word docs. With Bear's custom markup
-          shortcuts, you can add style and links with just a tap or keystroke.
+          {{site.feature_3.description}}
         </p>
       </div>
     </div>
@@ -161,102 +155,25 @@ title: Home
 >
   <div class="w-11/12 max-w-6xl m-auto lg:w-9/12">
     <h2 class="text-3xl mb-10 text-left lg:text-center">
-      Bear features at a glance
+      {{site.features_overview.header}}
     </h2>
     <div class="flex flex-wrap">
       <div class="w-full lg:w-1/2">
         <ul class="list px-6 lg:px-8">
-          <li class="mb-3">
-            <span class="text-black"
-              ><span class="font-semibold">Advanced Markup Editor</span> that
-              supports and highlights over 20 programming languages</span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              ><span class="font-semibold">Rich previews</span> while writing so
-              you see prose, not code</span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              >In-line support for
-              <span class="font-semibold">images and photos</span></span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              >Use <span class="font-semibold">Cross-Note Links</span> to build
-              a body of work, quickly reference other notes, and more</span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              >Quickly <span class="font-semibold">add todos</span> to
-              individual notes to keep yourself on task</span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              ><span class="font-semibold">Multiple themes</span> to offer a
-              style for everyone</span
-            >
-          </li>
-          <li class="mb-3">
-            <span class="text-black"
-              ><span class="font-semibold">Multiple export options</span>
-              including HTML, PDF, DOCX, MD, JPG, and more</span
-            >
-          </li>
+          {% for feature in site.features_overview.feature_set_1 %}
+            <li class="mb-3">
+              <span class="text-black">{{feature}}</span>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="w-full lg:w-1/2">
         <ul class="list text-primary px-6 text-left lg:px-8">
-          <li class="mb-3 ">
-            <span class="text-black"
-              ><span class="font-semibold">Smart Data Recognition</span> of
-              elements like links, emails, addresses, colors, and more to
-              come</span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black"
-              ><span class="font-semibold">Hashtags</span> to quickly find and
-              organize notes however you like</span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black"
-              >One-tap formatting on iPhone and iPad with a
-              <span class="font-semibold">custom shortcut bar</span></span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black">
-              <span class="font-semibold">Focus Mode</span> hides notes and
-              other options when it matters</span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black"
-              >All your notes are stored in
-              <span class="font-semibold">plain text</span> for the ultimate in
-              portability</span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black"
-              >Effortless, secure, and private
-              <span class="font-semibold">multi-device sync</span> via
-              iCloud</span
-            >
-          </li>
-          <li class="mb-3 ">
-            <span class="text-black"
-              ><span class="font-semibold">Regular updates</span> to keep you
-              and your writing current</span
-            >
-          </li>
+          {% for feature in site.features_overview.feature_set_2 %}
+            <li class="mb-3">
+              <span class="text-black">{{feature}}</span>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -267,34 +184,8 @@ title: Home
   class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-8 lg:py-16"
 >
   <div class="w-11/12 max-w-6xl m-auto text-left lg:text-center lg:w-9/12">
-    <h2 class="text-3xl mb-4">Pricing model</h2>
-    <p>Many of Bear’s features are free to use on Mac, iPad, and iPhone.</p>
-    <p>
-      You can create notes, add tags and attachments, and export to a variety of
-      formats.
-    </p>
-    <p class="my-6">
-      <span class="font-semibold">Bear Pro</span> offer advanced features,
-      including sync between all your devices, over a dozen beautiful themes,
-      and more powerful export options. All this, and future Pro features, can
-      be unlocked with a single in-app subscription that covers all your
-      devices.
-    </p>
-    <p>The Bear Pro subscription has two options:</p>
-    <ul class="my-6">
-      <li>
-        <span class="font-semibold">$1.49 monthly</span>, which offers a
-        <span>one week</span> free trial
-      </li>
-      <li>
-        <span class="font-semibold">$14.99 annually</span>, which has a
-        <span>one month</span> free trial
-      </li>
-    </ul>
-    <p>
-      Prices may vary based on your region due to local tax laws and conversion
-      rates from U.S. dollars.
-    </p>
+    <h2 class="text-3xl mb-4">{{site.pricing.header}}</h2>
+    <p>{{site.pricing.description}}</p>
   </div>
 </section>
 <section
@@ -303,77 +194,83 @@ title: Home
 >
   <div class="w-11/12 max-w-6xl m-auto text-center lg:w-9/12">
     <div class="mb-16">
-      <h2 class="text-3xl mb-4">Bear on the Web</h2>
-      <p>A collection of the parts of the internet dedicated to Bear.</p>
+      <h2 class="text-3xl mb-4">{{site.social_media.header}}</h2>
+      <p>{{site.social_media.subheader}}</p>
     </div>
     <div class="flex flex-wrap">
-      {% for social in site.social_media %}
-      <div class="w-full text-center mb-12 lg:w-4/12 lg:mb-0 lg:px-4">
-        <div class="flex justify-center mb-4">
-          <img class="h-30 w-30" src="{{social.img}}" alt="Logo" />
+      {% for social in site.social_media.links %}
+        <div class="w-full text-center mb-12 lg:w-4/12 lg:mb-0 lg:px-4">
+          <div class="flex justify-center mb-4">
+            <img class="h-30 w-30" src="{{social.img}}" alt="Logo" />
+          </div>
+          <h3 class="text-2xl mb-3">{{social.title}}</h3>
+          <p>{{social.subtitle}}</p>
         </div>
-        <h3 class="text-2xl mb-3">{{social.title}}</h3>
-        <p>{{social.subtitle}}</p>
-      </div>
       {% endfor %}
     </div>
   </div>
 </section>
-<section
-  class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-8 lg:py-16"
->
-  <div class="w-11/12 max-w-6xl m-auto text-left lg:text-center lg:w-8/12">
-    <h2 class="text-3xl ">Subscribe to Bear Newsletter</h2>
-    <div class="mt-12 mb-8">
-      {% include subscription-form.html %}
-    </div>
-    <p class="text-gray-lighter text-left lg:text-center">
-      No spam, ever. Your email address will only ever be used for Bear and
-      Shiny Frog News and you can easily unsubscribe with a single click at any
-      time.
-    </p>
-  </div>
-</section>
-<footer class="bg__inverse">
-  <div class="w-11/12 max-w-6xl m-auto lg:w-9/12">
-    <div class="flex flex-row flex-wrap py-8">
-      <div class="w-full lg:w-1/2">
-        <p class="mb-4 text-center lg:text-left">Resources</p>
-        <ul>
-          {% for resource in site.resources %}
-          <li class="flex flex-row items-center mb-1">
-            <svg
-              class="text-primary"
-              width="14"
-              height="14"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="none" fill-rule="evenodd">
-                <path
-                  d="M6.564 5.57h0c-.627-.568-.187-1.986.968-3.154l.965-.975a2.905 2.905 0 014.186.038l-.119-.123a3.02 3.02 0 01-.067 4.254l-.875.851c-1.186 1.155-3.07 1.111-3.148 1.028h0"
-                />
-                <path d="M4 10l6-6" stroke-linecap="square" />
-                <path
-                  d="M5.5 6.5h0c-.555-.552-1.958-.063-3.138 1.094l-.87.853a2.88 2.88 0 00.037 4.162l-.025-.024a2.969 2.969 0 004.217-.118l.733-.782c1.13-1.207 1.1-3.131 1.046-3.185h0"
-                />
-              </g>
-            </svg>
-            <a class="ml-2 hover:text-primary" href="{{resource.link}}"
-              >{{resource.title}}</a
-            >
-          </li>
-          {% endfor %}
-        </ul>
+{% if site.subscription %}
+  <section
+    class="border border-white-darkest border-b-1 border-t-0 border-l-0 border-r-0 py-8 lg:py-16"
+  >
+    <div class="w-11/12 max-w-6xl m-auto text-left lg:text-center lg:w-8/12">
+      <h2 class="text-3xl ">{{site.subscription.header}}</h2>
+      <div class="mt-12 mb-8">
+        {% include subscription-form.html %}
       </div>
-      <div class="w-full text-center mt-8 lg:w-1/2 lg:text-right lg:mt-0">
-        <ul class="mb-4">
-          {% for data in site.footer_links %}
-          <li class="inline-block mr-6">
-            <a class="text-primary" href="{{data.link}}">{{data.title}}</a>
-          </li>
-          {% endfor %}
-        </ul>
+      <p class="text-gray-lighter text-left lg:text-center">
+        {{site.subscription.message}}
+      </p>
+    </div>
+  </section>
+{% endif %}
+{% if site.footer.show_resources or site.footer.show_links %}
+  <footer class="bg__inverse">
+    <div class="w-11/12 max-w-6xl m-auto lg:w-9/12">
+      <div class="flex flex-row flex-wrap py-8">
+        <div class="w-full lg:w-1/2">
+          {% if site.footer.show_resources %}
+            <p class="mb-4 text-center lg:text-left">{{site.footer.resources.title}}</p>
+            <ul>
+              {% for resource in site.footer.resources.links %}
+              <li class="flex flex-row items-center mb-1">
+                <svg
+                  class="text-primary"
+                  width="14"
+                  height="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      d="M6.564 5.57h0c-.627-.568-.187-1.986.968-3.154l.965-.975a2.905 2.905 0 014.186.038l-.119-.123a3.02 3.02 0 01-.067 4.254l-.875.851c-1.186 1.155-3.07 1.111-3.148 1.028h0"
+                    />
+                    <path d="M4 10l6-6" stroke-linecap="square" />
+                    <path
+                      d="M5.5 6.5h0c-.555-.552-1.958-.063-3.138 1.094l-.87.853a2.88 2.88 0 00.037 4.162l-.025-.024a2.969 2.969 0 004.217-.118l.733-.782c1.13-1.207 1.1-3.131 1.046-3.185h0"
+                    />
+                  </g>
+                </svg>
+                <a class="ml-2 hover:text-primary" href="{{resource.link}}"
+                  >{{resource.title}}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        <div class="w-full text-center mt-8 lg:w-1/2 lg:text-right lg:mt-0">
+          {% if site.footer.show_links %}
+            <ul class="mb-4">
+              {% for data in site.footer.links %}
+              <li class="inline-block mr-6">
+                <a class="text-primary" href="{{data.link}}">{{data.title}}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+{% endif %}
