@@ -1,73 +1,55 @@
 ---
-layout: content
-title: Blog
+layout: blog
+title: Bear turns 3
 ---
 
 <section class="py-8 lg:py-16">
-  <div class="w-11/12 max-w-6xl m-auto lg:w-10/12 faq">
-    <h2>
-      Mirage from Evernote
-    </h2>
-    <p>
-      To import your notes from Evernote you just need to perform a couple of
-      steps:
-    </p>
-    <ul class="list faq__list px-4">
-      <li class="mb-3">
-        <span
-          >Export your Evernote notes into a .enex archive following this
-          <a href="">export guide</a>
-        </span>
-      </li>
-      <li class="mb-3">
-        <span>Import the .enex inside Bear </span>
-      </li>
-      <li class="mb-3">
-        <span
-          >On <span class="font-semibold">macOS</span> you can import your notes
-          by selecting
-          <code class="faq__code">File</code>
-          → <code class="faq__code">Import From</code> →
-          <code class="faq__code">Evernote</code> from the menu bar.</span
-        >
-      </li>
-      <li class="mb-3">
-        <span
-          >On <span class="font-semibold">iOS</span> you can access to the
-          importers by going to
-          <code class="faq__code">Import & Export</code> in the Preferences,
-          locate the <code class="faq__code">Import From</code> section, select
-          <code class="faq__code">Evernote</code> as format and tap on
-          <code class="faq__code">Import Notes</code>.</span
-        >
-      </li>
-    </ul>
-    <p>
-      The .enex format does not include informations about your notebooks. If
-      you want to keep the notebook name as a reference in Bear we suggest to
-      add a tag to your notes in Evernote before exporting them. The enex does
-      retain the notes you trashed in Evernote, please consider empty Evernote's
-      trash before exporting.
-    </p>
-    <p>
-      Before importing, it is suggested to check the
-      <code class="faq__code">Exclude unintentional tags</code>
-      options to avoid words which begin with # will be interpreted as Bear's
-      tags.
-    </p>
-    <p>
-      If you want to
-      <a href="">migrate your Evernote's notebooks</a> to Bear you can use tags.
-      Create a new note in Bear with a tag for every notebook (e.g.
-      <code class="faq__code">#notebook1</code>,
-      <code class="faq__code">#notebook2</code>,
-      <code class="faq__code">#notebook3</code>, etc…). Export each notebook in
-      an enex file and import them one by one. After every import, drag and drop
-      the new notes to the corresponding tag. Use the search to find the newly
-      imported notes (e.g. to find the notes which do not belong to
-      <code class="faq__code">#notebook1</code> and
-      <code class="faq__code">#notebook2</code> search for
-      <code class="faq__code">-#notebook1 -#notebook2</code>).
-    </p>
-  </div>
+  <article class="w-11/12 max-w-6xl m-auto lg:w-10/12">
+    <div class="w-11/12 m-auto mb-12 lg:w-7/12">
+      <h2 class="blog__header">
+        Bear turns 3
+      </h2>
+      <p class="blog__paragraph">Published <time>November 27, 2019</time></p>
+    </div>
+    <img class="m-auto" src="/assets/img/bear.png" alt="Blog post image" />
+    <div class="w-11/12 m-auto mt-12 lg:w-7/12">
+      <p class="blog__paragraph">
+        For many of us on the Bear team, it’s that time of year again. Leaves
+        change color and fall, winter jackets come out of hibernation, and Bear
+        turns a year older! Bear is now three years old, and what a year it’s
+        been.
+      </p>
+      <p class="blog__paragraph">
+        Quite a lot has changed since
+        <a class="text-primary" href="">last November</a>. Our team has grown to
+        15 people across Italy, Ireland, the UK, and the United States. Speaking
+        of Ireland, our first-ever office space in
+        <a class="text-primary" href="">TAG, Dublin</a> has worked out quite
+        well. We love the space and Dublin as a city. A number of us work there
+        regularly, while others in the region swing by often for in-person team
+        time and occasional Nintendo Switch shenanigans.
+      </p>
+      <h3 class="blog__subheader">Major updates</h3>
+      <p class="blog__paragraph">
+        Overall, 2019 has been a year of major projects for us. Some are already
+        available, others made big strides.
+      </p>
+      <h4 class="blog__section-header">
+        Encryption
+      </h4>
+      <img class="mb-8" src="/assets/img/encryption.gif" alt="encryption" />
+      <p class="blog__paragraph">
+        The ability to encrypt Bear notes has been one of the most requested
+        features since our original betas on Product Hunt in 2016. It took a
+        little more time to polish than we had hoped, but we wanted to get it
+        right.
+      </p>
+
+      <p class="blog__paragraph">
+        After working with an independent security firm to solidify our code, we
+        shipped Individual Note Encryption for Bear Pro users in August. It’s
+        been a big hit.
+      </p>
+    </div>
+  </article>
 </section>

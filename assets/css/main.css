@@ -113,10 +113,6 @@ html {
   @apply mb-4;
 }
 
-.faq a {
-  @apply text-primary;
-}
-
 .faq__code {
   @apply py-1 px-2 border border-gray-darkest bg-white-dark;
   font-family: monospace;
@@ -144,4 +140,28 @@ html {
   .previews__video {
     height: 200px;
   }
+}
+
+.bg__dark {
+  background-color: #1c1b1b;
+}
+
+.blog__header {
+  @apply text-gray-darkest font-semibold text-5xl;
+}
+
+.blog__subheader {
+  @apply text-gray-darkest font-semibold text-4xl mb-4;
+}
+
+.blog__section-header {
+  @apply text-gray-darkest font-semibold text-3xl mb-4;
+}
+
+.blog__summary {
+  @apply text-gray-darkest font-semibold text-lg;
+}
+
+.blog__paragraph {
+  @apply text-gray-darkest font-semibold text-lg mb-7;
 }

@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: blog
 title: Blog
 ---
 
@@ -7,12 +7,12 @@ title: Blog
 <section class="py-8 lg:py-16">
   <article class="w-11/12 max-w-6xl m-auto lg:w-10/12">
     <div class="w-11/12 m-auto mb-12 lg:w-7/12">
-      <h2 class="">
+      <h2 class="blog__header">
         <a href="{{post.link}}">
           {{post.title}}
         </a>
       </h2>
-      <p class="">
+      <p class="blog__summary">
         <a href="{{post.link}}">Published <time>{{ post.created_at }}</time></a>
       </p>
     </div>
@@ -20,7 +20,7 @@ title: Blog
       <img class="m-auto" src="{{post.img}}" alt="Blog post image" />
     </a>
     <div class="w-11/12 m-auto mt-12 lg:w-7/12">
-      <p class="">{{post.summary}}</p>
+      <p class="blog__summary">{{post.summary}}</p>
     </div>
   </article>
 </section>
