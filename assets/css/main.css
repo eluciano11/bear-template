@@ -34,6 +34,11 @@ html {
   font-family: 'NunitoSans', sans-serif;
 }
 
+svg {
+  fill: currentColor;
+  stroke: currentColor;
+}
+
 .logo {
   height: 48px;
   width: 48px;
@@ -60,8 +65,10 @@ html {
 }
 
 .input {
-  @apply py-3 px-4 border border-l-4 border-white-darkest text-sm;
-  border-left-color: #dd4c4f;
+  @apply py-3 px-4 border border-l-4 border-primary text-sm;
+  border-right-color: #dedede;
+  border-top-color: #dedede;
+  border-bottom-color: #dedede;
 }
 
 .previews {
