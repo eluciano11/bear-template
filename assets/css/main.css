@@ -100,29 +100,29 @@ html {
   @apply list-disc text-primary text-left;
 }
 
-.content {
+.faq {
   @apply text-gray;
 }
 
-.content h2 {
+.faq h2 {
   @apply text-3xl font-normal text-gray-dark mb-6;
 }
 
-.content p,
-.content ul {
+.faq p,
+.faq ul {
   @apply mb-4;
 }
 
-.content a {
+.faq a {
   @apply text-primary;
 }
 
-.content code {
+.faq__code {
   @apply py-1 px-2 border border-gray-darkest bg-white-dark;
   font-family: monospace;
 }
 
-.content ul li span {
+.faq__list li span {
   @apply text-gray;
 }
 
